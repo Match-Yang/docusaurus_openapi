@@ -1,0 +1,50 @@
+---
+id: get-order-by-id
+title: "Find purchase order by ID"
+description: "For valid response try integer IDs with value <= 5 or > 10. Other values will generate exceptions."
+sidebar_label: "Find purchase order by ID"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVltv3EQU/isHv7SRNnYuhcIKEIG0aAUiFQkPKImqWfvselp7xpkZ72ZZ7X/nO2M7cZKKti88IJ48njn3y3fONglq6ZPpZeKDdZxcT5KCfe50E7Q1yTR5bR2tVKULcuwbazxTcBvSJvCSHc1OPa11KIWmZfr2O/qSwPE9HR6kdBZKdt2LUFUVLdmwU4GJb3OOKnyaTBLbyC3+ZgVULjmcuYLdjxv8TpJGOVVzYCdmbhODHxBZoYjvWsxsVCiTx7bPTskuKFJSKFUgw1x4CpbmTAsOeckiwPFNqx2O0+BaniQe97VKptskbBrR1TsL0oV1tQrd1Vcvkt3uWti7uHjhODo4kM9DO3yb5+z9oq3ozlMIyy3kmiD0qmkqnceH7Lau5OqJFXb+jvMgAXEiJehOoy4+xdJJwreqbioQHR7sIIPD7LMZv/n65csjMN+0ygQdNh/lPz4a878Eqy91c4oCGLH64LRZjjkLEOwHjTwLR1Ch9R+ifxjkWDJ03lGPtEpsnV3FTLNpa6n1plJ5vBi9FVzpFUsZXO8kN8L9wM65tRUrg6RPkj5H41oUWxGUqPKsu9hNHiT2nRdD/8/sfyGzQvriQ70+Mx1aAnt8K8mH2kj74ilt55ixgRa2NUXUD6QrbY+CEfyAa9Mki+icRXOybY99O7x7dqsBGVsH05MyhMZPswx1EJmOU79WS2Qw1TZTjc5Wx4nAlue8dUj1uVRjV3ADy1vVitb7+pR/SfiisuuuNGspa91hFx6t03/FIv/j4zZEadnAxeJEjrKPctewiKfCBim1LfRiQ/KHeUMb2zpSeY5QhYjaqhgo5dy9x4suPfD17XselzJufsHFZMjuQNHPkBJS+rbVZmEjY5/28858etM7RPt01rA5eTOj4/TgScVelBome1LkY60KHwpYGM9jwmiuPBdkDeYSj0WRbzjXix4yUqI/bUu5MrTQBvRtoFqkqDmOV2YwC6PtUmKOkN8H+vr5k6u9lGadylBqVxCC3U0jmZNyjfBRdHBCa362YvIY7jImZWgKAfzUS7HG+UCxx1RefnFlBjONXVPJVUMtAlDHFox84t665LgQ6PDM03xDtXqPdqe8VGbJ/l4DXNXRKB08VzLAh7fcFpxemQuZ5Wu1mXSrh+CJ2BsNeKwUhdMtHdWEFELIt43FDuNtzYPThtfYBoAumORCf3ZyfgwtCK8QtZ5lcFfavPfTK7NPlxflOKGOIVDjuOkCLnW/hFntPAXUDMHfl84bzkNb7N2J86jdvDN45P9CPB8r+2wN2byy86xWHonOvMtx1CaDn1Gfz9B3BnzpRtXVHsoYZLU/W0iR6pz7Tn5QQlkkyfr1ReURAjDOdNU1VGBV/3BPLtgHpGDsRyNYPWlQNUxHsXXuYQuK1ut1quJrat0y61l99uvsp1e/nb/aB0taBmA05Arwdf12iNvDQ7lDLkKtzEjXa2mcBu6WaLl+GUTxzU4fd+32fiH7d7beHpUC34YMcwsYtOujse1xf9jKJ/0gmiTTYe8FgpfwVWi2W0ETIO9uJ9c3LTug3iWOK+W0mguCYTwU2ssZs2WhKs//4P3z3/uNeI8+cYX+oCsD6hpB2BgP/OEYQflugd/JUO6hV8zsXk9yidSI7/GGLCPsblb+/OoCsP03dqRjUg==
+sidebar_class_name: "get api-method"
+info_path: api/petstore/swagger-petstore-openapi-3-0
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Find purchase order by ID</h1>
+
+<MethodEndpoint method={"get"} path={"/store/order/{orderId}"}></MethodEndpoint>
+
+
+
+For valid response try integer IDs with value <= 5 or > 10. Other values will generate exceptions.
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"orderId","in":"path","description":"ID of order that needs to be fetched","required":true,"schema":{"type":"integer","format":"int64"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"200"} value={"200"}><div>
+
+successful operation
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/xml"} value={"application/xml"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"id"} required={false} schemaName={"int64"} qualifierMessage={undefined} schema={{"type":"integer","format":"int64","example":10}}></SchemaItem><SchemaItem collapsible={false} name={"petId"} required={false} schemaName={"int64"} qualifierMessage={undefined} schema={{"type":"integer","format":"int64","example":198772}}></SchemaItem><SchemaItem collapsible={false} name={"quantity"} required={false} schemaName={"int32"} qualifierMessage={undefined} schema={{"type":"integer","format":"int32","example":7}}></SchemaItem><SchemaItem collapsible={false} name={"shipDate"} required={false} schemaName={"date-time"} qualifierMessage={undefined} schema={{"type":"string","format":"date-time"}}></SchemaItem><SchemaItem collapsible={false} name={"status"} required={false} schemaName={"string"} qualifierMessage={"**Possible values:** [`placed`, `approved`, `delivered`]"} schema={{"type":"string","description":"Order Status","example":"approved","enum":["placed","approved","delivered"]}}></SchemaItem><SchemaItem collapsible={false} name={"complete"} required={false} schemaName={"boolean"} qualifierMessage={undefined} schema={{"type":"boolean"}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"<root>\n  <id>10</id>\n  <petId>198772</petId>\n  <quantity>7</quantity>\n  <shipDate>2024-01-16T03:00:55.701Z</shipDate>\n  <status>approved</status>\n  <complete>true</complete>\n</root>"} language={"xml"}></ResponseSamples></TabItem></SchemaTabs></TabItem><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"id"} required={false} schemaName={"int64"} qualifierMessage={undefined} schema={{"type":"integer","format":"int64","example":10}}></SchemaItem><SchemaItem collapsible={false} name={"petId"} required={false} schemaName={"int64"} qualifierMessage={undefined} schema={{"type":"integer","format":"int64","example":198772}}></SchemaItem><SchemaItem collapsible={false} name={"quantity"} required={false} schemaName={"int32"} qualifierMessage={undefined} schema={{"type":"integer","format":"int32","example":7}}></SchemaItem><SchemaItem collapsible={false} name={"shipDate"} required={false} schemaName={"date-time"} qualifierMessage={undefined} schema={{"type":"string","format":"date-time"}}></SchemaItem><SchemaItem collapsible={false} name={"status"} required={false} schemaName={"string"} qualifierMessage={"**Possible values:** [`placed`, `approved`, `delivered`]"} schema={{"type":"string","description":"Order Status","example":"approved","enum":["placed","approved","delivered"]}}></SchemaItem><SchemaItem collapsible={false} name={"complete"} required={false} schemaName={"boolean"} qualifierMessage={undefined} schema={{"type":"boolean"}}></SchemaItem></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"{\n  \"id\": 10,\n  \"petId\": 198772,\n  \"quantity\": 7,\n  \"shipDate\": \"2024-01-16T03:00:55.701Z\",\n  \"status\": \"approved\",\n  \"complete\": true\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem><TabItem label={"400"} value={"400"}><div>
+
+Invalid ID supplied
+
+</div><div></div></TabItem><TabItem label={"404"} value={"404"}><div>
+
+Order not found
+
+</div><div></div></TabItem></ApiTabs></div></div>
+      

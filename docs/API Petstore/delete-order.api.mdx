@@ -1,0 +1,46 @@
+---
+id: delete-order
+title: "Delete purchase order by ID"
+description: "For valid response try integer IDs with value < 1000. Anything above 1000 or nonintegers will generate API errors"
+sidebar_label: "Delete purchase order by ID"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVU1v4zYQ/StTXXYDOJKzCXowemhQp4DRRbOo00ORBAtaGllEJFJLUta6hv9731BS4iZFiz31JIp8w5n3OB+HJKitTxb3iQ/WcfI4Swr2udNt0NYki+Rn62inal2QY99a45mC25M2gbfsaLX01OtQCaZj+oEu5vN5StdmHypttqQ2dsdxk3CRsWY0FKu6pi0bdiowXX9aETtnnU9miW1lE/5XBSIouObAt65gh7NWOdXg30nQh8TgBxgrp0DPEi1BtypUyWsmqyXZkkLFFNFYqUCGufAULG2YBkdyieMvnXZYLoLreJb4vOJGJYtDEvat+BtZAFpa16gwbH1/lRyPj2I+KOXF4mo+l8+rWMygKWLyXdvWGr6OM2Cv3mIjc0gXqLSdAQ5AKFDZF3GiLqC8SLL4jFlkmB1GWY449+x2k2idqwGtQmj9IstaDtHoMvW92oJVqm2mWp3tLhNh4znvnA77tYgwcJpMPqtOvD7LYuX/g6hS2z4idQNyuQ6ylkPr9J/xaX//7xjibdlkJSR9jtSI9/aIiBdihlsaW+hyT/KHxKS97RypPIdaIT6mKiakrIfzuHE8ipjg+vmJ9yc8sPMLNmZTek2IMb0q3ILHF1ttShsNdagFuR7Cp08jITqn25aNpPdlOn+Tk3eVRsieFHkFpVjsaB0N1/HBaKM8F2RNTNyTq8i3nOtS51HNlOgP21GuDJXaAN8FauQW1F8XHswUFjL+XjSH5C9CP75/s3WW0mpwiTJ2BUHsoSKnEoJ8FAnOqOd3KHGPLoAEKaSWBACeeivROB9Ita2zKq++ezBTmMb2VHHdUgcBGhzvONoJvb5CeiNaHd552uypUU/SS/JKmS37Fw+gqmNQOniuS+kw41luC04fzJ2UeK/2s6FHBd3EeGMAr50icYZuVM9IQUL+2lo0O28bnkgb7qlkFToUuOBvr9eX8AJ5BdR5Lruaam2e/OLBnNP9XXX6oI5xocZyPwgueb9FWN0mzW0ziX8ulTetp7I4e77OI3fzIeAT/qUwP3X2zR6yTW03WaM8HjrzLsdSmww8oz+foe4M7NK9auozpDFgjb8tJUl1zmMl/y2FsgjJgM2tCSqPLQBdVNdDQQVWzY8vcGl/6BSMtinAsfCuW2QN04dYOi9tC476vk9VPE2t22ajqc8+rn66+XV9cw6TtApNLfdK4xvq7QK7Fxeyh7cIjTInvpaxlVILwhWKbpwSSL/V8nXdHiInNuF/GpBjmwr8NWRtjZcSRlGewzgIpnk+G0YjvotpRqKlVyAvmMNB2gta8fEo2186dmiD91julNNqIy0N86LQXtaYN6WqPf+LGO9/GyfnGX3DuP1HOlMrNtJ2o3j4wzJ26ueBf3w8nYbLm483dzdozH8BgcAPYA==
+sidebar_class_name: "delete api-method"
+info_path: api/petstore/swagger-petstore-openapi-3-0
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Delete purchase order by ID</h1>
+
+<MethodEndpoint method={"delete"} path={"/store/order/{orderId}"}></MethodEndpoint>
+
+
+
+For valid response try integer IDs with value < 1000. Anything above 1000 or nonintegers will generate API errors
+
+## Request
+
+<details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><h3 className={"openapi-markdown__details-summary-header-params"}>Path Parameters</h3></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"orderId","in":"path","description":"ID of the order that needs to be deleted","required":true,"schema":{"type":"integer","format":"int64"}}}></ParamsItem></ul></div></details><div><div><ApiTabs label={undefined} id={undefined}><TabItem label={"400"} value={"400"}><div>
+
+Invalid ID supplied
+
+</div><div></div></TabItem><TabItem label={"404"} value={"404"}><div>
+
+Order not found
+
+</div><div></div></TabItem></ApiTabs></div></div>
+      
